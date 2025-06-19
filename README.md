@@ -22,7 +22,10 @@ A lightweight desktop weather app that displays your current location's weather 
 - **PyWebview** (for rendering the HTML GUI)
 
 ---
+## 📷Screenshot:
+![weather app gui](https://github.com/user-attachments/assets/b23a4347-d797-4b4f-886b-3c5d5b3a7ae5)
 
+---
 ## 📝 Notes
 - This app does not need an API key.
 
