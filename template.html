@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather App</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom right, #89f7fe, #66a6ff);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .weather-card {
+      background: white;
+      border-radius: 20px;
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      max-width: 300px;
+      width: 90%;
+    }
+    .location {
+      font-size: 1.4rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+      color: rgb(77, 77, 77);
+    }
+    .emoji {
+      font-size: 5rem;
+      margin: 1rem 0;
+      color: yellow;
+    }
+    .temperature {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color:#ef5350;
+    }
+    .condition {
+      font-size: 1.2rem;
+      color: #444;
+    }
+    @media (max-width: 400px) {
+      .weather-card {
+        padding: 1.5rem;
+      }
+      .temperature {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="weather-card">
+    <div class="location">latitude: {{latitude}}</div>
+    <div class="location">longitude: {{longitude}}</div>
+    <div class="emoji">{{weather_state_emoji}}</div>
+    <div class="temperature">{{temperature}}</div>
+    <div class="condition"><strong>{{weather_state}}</strong></div>
+  </div>
+</body>
+</html>
